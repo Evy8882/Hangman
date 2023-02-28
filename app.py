@@ -15,7 +15,7 @@ def validar_palavra(lista_de_palavras):
     word = random.choice(lista_de_palavras)
 
     while '-' in word or ' ' in word or "'" in word or len(word) < 4:
-        random.choice(lista_de_palavras)
+        word = random.choice(lista_de_palavras)
 
     return word.upper()
 
